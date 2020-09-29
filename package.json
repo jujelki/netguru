@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html --out-dir=tmp",
+    "start:prototype": "parcel src/prototype.html --out-dir=tmp",
     "build": "parcel build src/index.html --out-dir=dist --public-url='./'"
   },
   "keywords": [],

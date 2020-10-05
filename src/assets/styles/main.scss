@@ -1,12 +1,15 @@
+@import "./components/index.scss";
+
 html,
 body {
   margin: 0;
+  font-family: "San Francisco Display";
 }
 
 *,
 *:after,
 *:before {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 h1,
@@ -24,49 +27,59 @@ h4 {
   padding: 10px;
 }
 
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-}
-
-.container {
-}
-
 .header {
   display: grid;
   grid-template-columns: 0.5fr 2fr 1fr;
-  width: 100%;
   height: 108px;
-  padding-left: 108px;
+  margin-left: 108px;
   box-shadow: 0 4px 20px rgba(37, 38, 94, 0.1);
-
-  .logo {
-    display: flex;
-    grid-row: 1/2;
-    grid-column: 1/2;
-
-    img {
-      width: 32px;
-      height: 32px;
-    }
-  }
-
-  .search-wr {
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
-
-  .chat {
-    grid-row: 1/2;
-    grid-column: 3/4;
-  }
 }
 
+.logo,
+.search-wr,
+.auth {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--c-lightgray100);
+}
+
+.logo {
+  grid-row: 1/2;
+  grid-column: 1/2;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+.article {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.search-wr {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
 .search {
+  height: 100%;
+  padding-left: 40px;
   border: none;
+  font-size: 18px;
+  background: url(/assets/pics/icons/search.svg) no-repeat 0 50%;
+}
+
+.auth {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+.user-panel {
+  display: flex;
+}
+.header_my-userpic {
+  width: 56px;
+  height: 56px;
 }
 
 .aside {
@@ -76,10 +89,10 @@ button {
   top: 0;
   left: 0;
   background: url(/assets/pics/icons/roll.png) no-repeat;
-  background-color: #7540ee;
+  background-color: var(--c-violet);
 
   svg {
-    stroke: #fff;
+    stroke: var(--c-white);
   }
 }
 
@@ -98,7 +111,7 @@ button {
   &:hover,
   :active {
     background-color: rgba(37, 38, 94, 0.25);
-    border-right: 2px solid #ffc800;
+    border-right: 2px solid var(--c-gold);
   }
 
   svg {
@@ -111,9 +124,9 @@ button {
   grid-template-rows: 91px 1fr 1fr;
   margin-left: 108px;
   grid-template-areas:
-    "filters select dialog_header"
-    "filters_show contacts dialog"
-    "filters_positions contacts dialog";
+    "filters select chat"
+    "filters_show contacts chat"
+    "filters_positions contacts chat";
 }
 .select {
   grid-area: select;
@@ -131,14 +144,11 @@ button {
 .filters_list {
   grid-area: filters_list;
 }
-.dialog_header {
-  grid-area: dialog_header;
-}
-.dialog {
-  grid-area: dialog;
+.chat {
+  grid-area: chat;
 }
 .content--item {
-  border: 1px solid #ececee;
+  border: 1px solid var(--c-lightgray50);
   border-bottom: none;
 }
 
@@ -146,26 +156,26 @@ button {
   display: inline;
   padding: 3px 15px;
   border-radius: 16px;
-  color: #fff;
-  background-color: #2dc76d;
+  color: var(--c-white);
+  background-color: var(--c-green);
 }
 
 .control-buttons {
   display: flex;
   width: 210px;
   justify-content: space-around;
-  border: 1px solid #ececee;
+  border: 1px solid var(--c-lightgray100);
   border-radius: 15px;
 
   svg {
-    stroke: #7540ee;
+    stroke: var(--c-violet);
   }
 
   .button {
     padding: 13px 25px;
 
     &:not(:last-of-type) {
-      border-right: 1px solid #ececee;
+      border-right: 1px solid var(--c-lightgray100);
     }
 
     &:hover {
@@ -182,9 +192,9 @@ button {
 .chevron-down {
   width: 6px;
   height: 6px;
-  transform: rotate(45deg) translateX(22px);
-  border-right: 2px solid #7540ee;
-  border-bottom: 2px solid #7540ee;
+  transform: rotate(45deg);
+  border-right: 2px solid var(--c-violet);
+  border-bottom: 2px solid var(--c-violet);
 }
 
 //checkbox styles
@@ -207,7 +217,7 @@ button {
   width: 24px;
   height: 24px;
   border-radius: 3px;
-  border: 2px solid #cdd1da;
+  border: 2px solid var(--c-lightgray100);
   margin-right: 10px;
   transition: 0.2s;
 }

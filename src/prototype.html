@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="//db.onlinewebfonts.com/c/65049e8b2a3ba8f203faebf5b0609f7f?family=San+Francisco+Display"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <title>netguru:prototype</title>
-  </head>
 
-  <body class="aligned-container">
-      <div id="place-content-here"></div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="//db.onlinewebfonts.com/c/65049e8b2a3ba8f203faebf5b0609f7f?family=San+Francisco+Display" rel="stylesheet"
+    type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>netguru:prototype</title>
+</head>
+
+<body class="aligned-container">
+  <div id="place-content-here">
+    <div class="chat">
+      <div class="chat-header">
+        <div class="user">
+          <div class="user-pic_wr"><img class="user-pic" src="/assets/pics/photos/mike-piechota@3x.png" alt=""></div>
+          <div class="user-info">
+            <p class="user-name">Mike Piechota</p>
+            <p class="user-status">Now active</p>
+          </div>
+        </div>
+        <button class="chat_close-btn button">
+          <div class="cross"></div>
+        </button>
+      </div>
+      <div class="welcome-message">
+        <div class="welcome-message_emodji">👋</div>
+        <div class="welcome-message_text">
+          It’s your first time speaking with Mike.<br>
+          Say hello to him!
+        </div>
+      </div>
+      <div class="conversation-date">Today, 05.02.2018</div>
+
+      <div class="chat-log">
+
+        <div class="message-wr message-inbox">
+          <div class="message-inbox_text">👋</div>
+          <img src="/assets/pics/photos/mike-piechota@3x.png" alt="" class="receiver-userpic">
+        </div>
+
+        <div class="message-wr message-sent">
+          <div class="message-sent_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras efficitur ultricies dolor, at rhoncus nulla sodales eget.</div>
+          <img class="my-userpic" src="/assets/pics/photos/my_userpic@3x.png" alt="">
+        </div>
+
+        <div class="message-wr message-inbox">
+          <div class="message-inbox_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras efficitur ultricies dolor, at rhoncus nulla sodales eget.</div>
+          <img src="/assets/pics/photos/mike-piechota@3x.png" alt="" class="receiver-userpic">
+        </div>
+
+        <div class="message-wr message-sent">
+          <div class="message-sent_text">Praesent dolor neque, posuere et purus quis, volutpat semper ante.</div>
+          <img class="my-userpic" src="/assets/pics/photos/my_userpic@3x.png" alt="">
+        </div>
+
+        <div class="message-wr message-inbox">
+          <div class="message-inbox_text">Ah Boba Boba DuDU DUDU I love Tarkan so much =)) </div>
+          <img src="/assets/pics/photos/mike-piechota@3x.png" alt="" class="receiver-userpic">
+        </div>
+
+        <div class="writing-status">Mike is writing<div class="dots">
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="control-panel">
+        <form class="textarea  scroll" method="post">
+          <textarea name="text" rows="3" cols="38">Write a message…</textarea>
+        </form>
+        <button class="upload-btn button"></button>
+        <button class="send-btn button"></button>
+      </div>
+    </div>
+
     <script src="assets/scripts/index.js"></script>
-  </body>
+</body>
+
 </html>

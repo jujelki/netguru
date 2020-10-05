@@ -1,7 +1,3 @@
-body {
-  font-family: "San Francisco Display";
-}
-
 .button {
   &:active,
   &:focus {
@@ -18,8 +14,8 @@ body {
 }
 
 .chat {
-  width: 500px;
-  border: 1px solid #ececee;
+  width: 1fr;
+  border: 1px solid var(--c-lightgray100);
 }
 
 .chat-log {
@@ -33,7 +29,7 @@ body {
   height: 90px;
   justify-content: space-between;
   padding: 0 0 0 25px;
-  border: 1px solid #ececee;
+  border: 1px solid var(--c-lightgray100);
 }
 
 .user {
@@ -58,8 +54,8 @@ body {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    border: 3px solid #fff;
-    background-color: #2dc76d;
+    border: 3px solid var(--c-white);
+    background-color: var(--c-green);
   }
 }
 
@@ -69,60 +65,23 @@ body {
 }
 
 .user-name {
-  font-family: "San Francisco Display";
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.27px;
-  color: #25265e;
+  color: var(--c-deepblue);
 }
 
 .user-status {
-  font-family: "San Francisco Display";
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.27px;
-  color: #787993;
-}
-
-.chat_close-btn {
-  width: 90px;
-  color: #7540ee;
-
-  .cross {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 2px;
-      height: 13px;
-      background-color: #7540ee;
-      transform: rotate(45deg);
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 2px;
-      height: 13px;
-      background-color: #7540ee;
-      transform: rotate(-45deg);
-    }
-
-    &:hover {
-      filter: drop-shadow(2px 2px 1px rgba(247, 208, 80, 0.89));
-    }
-  }
+  color: var(--c-darkgray);
 }
 
 .welcome-message {
   display: flex;
   flex-direction: column;
-  background-color: #f1ebfd;
+  background-color: var(--c-lightlilac);
 }
 .welcome-message_emodji,
 .welcome-message_text {
@@ -138,8 +97,7 @@ body {
 .welcome-message_text {
   margin-top: 0;
   text-align: center;
-  color: #787993;
-  font-family: "San Francisco Display";
+  color: var(--c-darkgray);
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.23px;
@@ -151,8 +109,8 @@ body {
   margin: 23px auto;
   padding: 5px 10px;
   border-radius: 13px;
-  background-color: #ececee;
-  color: #787993;
+  background-color: var(--c-lightgray100);
+  color: var(--c-darkgray);
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.23px;
@@ -166,7 +124,7 @@ body {
   max-width: 330px;
   margin-bottom: 10px;
   padding: 15px;
-  color: #787993;
+  color: var(--c-darkgray);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.35px;
@@ -184,23 +142,22 @@ body {
 
 .message-inbox_text {
   border-radius: 5px;
-  background-color: #7540ee;
-  color: #fff;
+  background-color: var(--c-violet);
+  color: var(--c-white);
 
   &:after {
-    background-color: #7540ee;
+    background-color: var(--c-violet);
   }
 }
 
 .message-sent_text {
   position: relative;
   border-radius: 5px;
-  background-color: #ececee;
-  color: #787993;
-
+  background-color: var(--c-lightgray100);
+  color: var(--c-darkgray);
   &:after {
     right: 15px;
-    background-color: #ececee;
+    background-color: var(--c-lightgray100);
   }
 }
 
@@ -217,7 +174,7 @@ body {
 .writing-status {
   margin: 0 0 9px auto;
   font-size: 12px;
-  color: #787993;
+  color: var(--c-darkgray);
 }
 
 .dots {
@@ -247,13 +204,11 @@ body {
 .control-panel {
   display: flex;
   min-height: 75px;
-  border-top: 1px solid #ececee;
-
+  border-top: 1px solid var(--c-lightgray100);
   textarea {
     margin: 5px;
     border: none;
-    font-family: "San Francisco Display";
-    color: #787993;
+    color: var(--c-darkgray);
     font-size: 16px;
     font-weight: 500;
 
@@ -268,16 +223,4 @@ body {
 
 .textarea {
   width: 360px;
-}
-
-.upload-btn {
-  width: 70px;
-  height: 70px;
-  background: url(/assets/pics/icons/upload.svg) no-repeat 50%;
-}
-
-.send-btn {
-  width: 70px;
-  height: 70px;
-  background: url(/assets/pics/icons/send.svg) no-repeat 50%;
 }

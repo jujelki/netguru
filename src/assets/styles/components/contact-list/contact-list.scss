@@ -1,0 +1,68 @@
+.contact_list-item {
+  color: var(--c-deepblue);
+  letter-spacing: 0.2px;
+}
+
+.contact_list {
+  //border-spacing: 2em 0;
+  th {
+    text-align: left;
+    color: var(--c-darkgray);
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  td {
+    &:not(.checkbox__contact_list) {
+      width: 13.75rem;
+    }
+  }
+}
+
+.flex-cell {
+  display: flex;
+  min-height: 5.3rem;
+  align-items: center;
+  border-bottom: 1px solid var(--c-lightgray100);
+  margin-right: 2.1rem;
+}
+
+.contact_userpic {
+  width: 40px;
+  height: 40px;
+}
+
+.contact_status {
+  position: relative;
+  right: 13px;
+  top: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--c-white);
+}
+
+.contact_status-online {
+  background-color: var(--c-green);
+}
+
+.contact_status-offline {
+  background-color: var(--c-coral);
+}
+
+.contact_status-busy {
+  background-color: var(--c-gold);
+}
+
+.contact_name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact_position,
+.contact_date {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}

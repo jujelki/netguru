@@ -5,7 +5,13 @@
   "scripts": {
     "start": "parcel src/index.html --out-dir=tmp",
     "start:prototype": "parcel src/prototype.html --out-dir=tmp",
-    "build": "parcel build src/index.html --out-dir=dist --public-url='./'"
+    "build": "parcel build src/index.html --out-dir=dist --public-url='./'",
+    "lint:styles": "stylelint **/*.scss"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:styles"
+    }
   },
   "keywords": [],
   "author": "",
@@ -15,7 +21,10 @@
     "autoprefixer": "9.8",
     "node-sass": "^4.14.1",
     "parcel-bundler": "latest",
-    "postcss-modules": "latest"
+    "postcss-modules": "latest",
+    "husky": "^4.3.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {
     "core-js": "latest"

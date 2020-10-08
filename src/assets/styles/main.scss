@@ -3,7 +3,7 @@
 html,
 body {
   margin: 0;
-  font-family: "San Francisco Display", "Segoe UI", Arial, san-serif;
+  font-family: "San Francisco Display", "Segoe UI", Arial, sans-serif;
 }
 
 *,
@@ -196,6 +196,9 @@ h4 {
 
 //chevron-down
 .chevron-down {
+  position: relative;
+  top: 5px;
+  left: 5px;
   width: 6px;
   height: 6px;
   transform: rotate(45deg);
@@ -213,7 +216,7 @@ h4 {
 
 .checkbox + label {
   position: relative;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 35px;
   cursor: pointer;
 }
 
@@ -222,14 +225,27 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 24px;
-  height: 24px;
   border-radius: 3px;
   border: 2px solid var(--c-lightgray100);
   margin-right: 10px;
-  transition: 0.2s;
+}
+
+.checkbox-nested + label::before {
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox-parent + label::before {
+  width: 22px;
+  height: 22px;
 }
 
 .checkbox:checked + label::before {
-  background: url(/assets/pics/icons/check.svg) no-repeat 50% 50%;
+  background: url(/assets/pics/icons/check.svg) no-repeat 50% 50%/70%;
+}
+
+.section_name {
+  margin-left: 40px;
+  font-size: 12px;
+  color: var(--c-darkgray);
 }

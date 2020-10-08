@@ -1,0 +1,36 @@
+.positions_filter,
+.developers_filter {
+  list-style: none;
+}
+
+.filter-item {
+  margin: 1.5rem 0;
+}
+.developers_filter-item {
+  margin: 1rem 0;
+}
+
+.positions_filter {
+  color: var(--c-deepblue);
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.developers_filter {
+  color: var(--c-darkgray);
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.checkbox-nested + label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-parent_dropdown {
+  display: flex;
+}

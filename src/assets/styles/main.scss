@@ -3,12 +3,12 @@
 html,
 body {
   margin: 0;
-  font-family: "San Francisco Display";
+  font-family: "San Francisco Display", "Segoe UI", Arial, san-serif;
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -52,6 +52,7 @@ h4 {
     height: 32px;
   }
 }
+
 .article {
   font-size: 18px;
   font-weight: 500;
@@ -61,6 +62,7 @@ h4 {
   grid-row: 1/2;
   grid-column: 2/3;
 }
+
 .search {
   height: 100%;
   padding-left: 40px;
@@ -77,6 +79,7 @@ h4 {
 .user-panel {
   display: flex;
 }
+
 .header_my-userpic {
   width: 56px;
   height: 56px;
@@ -108,13 +111,11 @@ h4 {
   align-self: center;
   padding: 33px 38px;
   border-right: 2px solid transparent;
+
   &:hover,
   :active {
     background-color: rgba(37, 38, 94, 0.25);
     border-right: 2px solid var(--c-gold);
-  }
-
-  svg {
   }
 }
 
@@ -128,25 +129,30 @@ h4 {
     "filters_show contacts chat"
     "filters_positions contacts chat";
 }
+
 .select {
   grid-area: select;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .contacts {
   grid-area: contacts;
 }
+
 .filters {
   grid-area: filters;
 }
+
 .filters_list {
   grid-area: filters_list;
 }
+
 .chat {
   grid-area: chat;
 }
+
 .content--item {
   border: 1px solid var(--c-lightgray50);
   border-bottom: none;
@@ -204,12 +210,14 @@ h4 {
   opacity: 0;
   margin: 10px 0 0 20px;
 }
+
 .checkbox + label {
   position: relative;
   padding: 0 0 0 40px;
   cursor: pointer;
 }
-.checkbox + label:before {
+
+.checkbox + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -222,6 +230,6 @@ h4 {
   transition: 0.2s;
 }
 
-.checkbox:checked + label:before {
+.checkbox:checked + label::before {
   background: url(/assets/pics/icons/check.svg) no-repeat 50% 50%;
 }

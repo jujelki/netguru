@@ -19,6 +19,10 @@ h4 {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+}
+
 .aligned-container {
   min-height: 100vh;
   display: flex;
@@ -29,7 +33,7 @@ h4 {
 
 .content {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr;
+  grid-template-columns: 0.7fr 2fr 1fr;
   grid-template-rows: 91px 1fr 1fr;
   margin-left: 108px;
   grid-template-areas:
@@ -152,7 +156,7 @@ h4 {
 }
 
 .section_name {
-  margin-left: 40px;
+  margin: 32px 0 0 40px;
   font-size: 12px;
   color: var(--c-darkgray);
 }

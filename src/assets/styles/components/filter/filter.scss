@@ -1,3 +1,22 @@
+.filters {
+  display: flex;
+  align-items: center;
+  height: 90px;
+
+  p {
+    margin: 0 12px 0 40px;
+  }
+}
+
+.filters-number {
+  width: 40px;
+  height: 20px;
+  border-radius: 24px;
+  text-align: center;
+  color: var(--c-white);
+  background-color: var(--c-green);
+}
+
 .positions_filter,
 .developers_filter {
   list-style: none;
@@ -6,23 +25,24 @@
 .filter-item {
   margin: 1.5rem 0;
 }
+
 .developers_filter-item {
   margin: 1rem 0;
 }
 
 .positions_filter {
   color: var(--c-deepblue);
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
 }
 
 .developers_filter {
   color: var(--c-darkgray);
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
 }
 
-.checkbox-nested + label:before {
+.checkbox-nested + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -33,4 +53,5 @@
 
 .checkbox-parent_dropdown {
   display: flex;
+  align-items: center;
 }

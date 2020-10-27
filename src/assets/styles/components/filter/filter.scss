@@ -1,4 +1,4 @@
-.filters {
+.filters-header {
   display: flex;
   align-items: center;
   height: 90px;
@@ -17,8 +17,15 @@
   background-color: var(--c-green);
 }
 
-.positions_filter,
-.developers_filter {
+.filters-header,
+.filters-show,
+.filters-positions {
+  border-bottom: 1px solid var(--c-lightgray50);
+}
+
+.filters-show-list,
+.filters-positions-list,
+.filter-developers-list {
   list-style: none;
 }
 
@@ -26,17 +33,18 @@
   margin: 1.5rem 0;
 }
 
-.developers_filter-item {
+.filter-developers-item {
   margin: 1rem 0;
 }
 
-.positions_filter {
+.filters-show-list,
+.filters-positions-list {
   color: var(--c-deepblue);
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
 }
 
-.developers_filter {
+.filter-developers-list {
   color: var(--c-darkgray);
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;

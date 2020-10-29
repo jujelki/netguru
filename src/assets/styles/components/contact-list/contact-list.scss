@@ -4,19 +4,30 @@
 }
 
 .contact_list {
-  //border-spacing: 2em 0;
-  th {
-    text-align: left;
-    color: var(--c-darkgray);
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-  }
+  margin: 20px 25px;
+}
 
-  td {
-    &:not(.checkbox__contact_list) {
-      width: 13.75rem;
-    }
+.select-wr {
+  color: var(--c-deepblue);
+}
+
+.select {
+  height: 90px;
+  padding: 0 25px;
+  border-bottom: 1px solid var(--c-lightgray50);
+}
+
+.contact-column-name {
+  text-align: left;
+  color: var(--c-darkgray);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+td {
+  &:not(.checkbox__contact_list) {
+    width: 13.75rem;
   }
 }
 

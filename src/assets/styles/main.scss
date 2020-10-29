@@ -33,17 +33,16 @@ ul {
 
 .content {
   display: grid;
-  grid-template-columns: 0.7fr 2fr 1fr;
+  grid-template-columns: 0.6fr 2fr 1fr;
   grid-template-rows: 91px 1fr 1fr;
   margin-left: 108px;
   grid-template-areas:
-    "filters select chat"
+    "filters contacts chat"
     "filters contacts chat"
     "filters contacts chat";
 }
 
 .select {
-  grid-area: select;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,34 +71,6 @@ ul {
   border-radius: 16px;
   color: var(--c-white);
   background-color: var(--c-green);
-}
-
-.control-buttons {
-  display: flex;
-  width: 210px;
-  justify-content: space-around;
-  border: 1px solid var(--c-lightgray100);
-  border-radius: 15px;
-
-  svg {
-    stroke: var(--c-violet);
-  }
-
-  .button {
-    padding: 13px 25px;
-
-    &:not(:last-of-type) {
-      border-right: 1px solid var(--c-lightgray100);
-    }
-
-    &:hover {
-      background-color: rgba(236, 236, 238, 0.4);
-    }
-
-    &:active {
-      background-color: rgba(236, 236, 238, 0.7);
-    }
-  }
 }
 
 //chevron-down
@@ -132,6 +103,8 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
+  width: 20px;
+  height: 20px;
   border-radius: 3px;
   border: 2px solid var(--c-lightgray100);
   margin-right: 10px;
@@ -140,11 +113,6 @@ ul {
 .checkbox-nested + label::before {
   width: 18px;
   height: 18px;
-}
-
-.checkbox-parent + label::before {
-  width: 20px;
-  height: 20px;
 }
 
 .checkbox:checked + label::before {

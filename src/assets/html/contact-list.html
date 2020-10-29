@@ -1,113 +1,183 @@
-<div id="contact-list">
-  <table class="contact_list">
-
-    <tr class="contact_list-item">
-      <th></th>
-      <th>Name</th>
-      <th>Position</th>
-      <th>Added to network</th>
-    </tr>
-
-    <tr class="contact_list-item">
-      <td class="checkbox__contact_list">
-        <input class="checkbox" type="checkbox" id="contact-1">
-        <label for="contact-1"></label>
-      </td>
-      <td class="contact_name">
-        <div class="flex-cell">
-          <img src="/assets/pics/photos/mike-piechota@3x.png" alt="" class="contact_userpic">
-          <div class="contact_status contact_status-online"></div>
-          <span>Mike Piechota</span>
+    <div id="contact-list">
+      <div class="select">
+        <div class="select-wr">
+          <input class="checkbox" type="checkbox" id="select">
+          <label for="select">Select all</label></div>
+        <div class="control-buttons">
+          <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 20 18">
+              <g>
+                <g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M13 2v0-1 
+              0H3a2 2 0 0 0-2 2v10l3-3v0" />
+                  </g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M7 7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v10l-3-3v0H9a2 2 0 0 1-2-2z" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 18 18">
+              <g>
+                <g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M1 8h15.508" />
+                  </g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M15.857 3H2.143C1.512 3 1 3.482 1 4.077v11.846C1 
+                16.518 1.512 17 2.143 17h13.714c.631 0 1.143-.482 1.143-1.077V4.077C17 
+                3.482 16.488 3 15.857 3z" />
+                  </g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M14 1v2" />
+                  </g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M9 1v2" />
+                  </g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M4 1v2" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 17 17">
+              <g>
+                <g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M3 7v7a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V7v0" />
+                  </g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M6 4v0-3 0h5v3" />
+                  </g>
+                  <g>
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                      stroke-width="2" d="M1 4v0h15v3H1v0z" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
-      </td>
-      <td class="contact_position">
-        <div class="flex-cell">Product Designer</div>
-      </td>
-      <td class="contact_date">
-        <div class="flex-cell">01.02.2018</div>
-      </td>
-    </tr>
-
-    <tr class="contact_list-item">
-      <td class="checkbox__contact_list">
-        <input class="checkbox" type="checkbox" id="contact-2">
-        <label for="contact-2"></label>
-      </td>
-      <td class="contact_name">
-        <div class="flex-cell">
-          <img src="/assets/pics/photos/Luke_Pachtel@3x.png" alt="" class="contact_userpic">
-          <div class="contact_status contact_status-busy"></div>
-          Luke Pachtel
-        </div>
-      </td>
-      <td class="contact_position">
-        <div class="flex-cell">Sr. UI Designer</div>
-      </td>
-      <td class="contact_date">
-        <div class="flex-cell">01.02.2018</div>
-      </td>
-    </tr>
-
-    <tr class="contact_list-item">
-      <td class="checkbox__contact_list">
-        <input class="checkbox" type="checkbox" id="contact-3">
-        <label for="contact-3"></label>
-      </td>
-      <td class="contact_name">
-        <div class="flex-cell">
-          <img src="/assets/pics/photos/Dawid_Wozniak@3x.png" alt="" class="contact_userpic">
-          <div class="contact_status contact_status-busy"></div>
-          Dawid Wozniak
-        </div>
-      </td>
-      <td class="contact_position">
-        <div class="flex-cell">Sr. Product Designer & PD Team Leader</div>
-
-      </td>
-      <td class="contact_date">
-        <div class="flex-cell">18.01.2018</div>
-      </td>
-    </tr>
-
-    <tr class="contact_list-item">
-      <td class="checkbox__contact_list">
-        <div>
-          <input class="checkbox" type="checkbox" id="contact-4">
-          <label for="contact-4"></label></div>
-      </td>
-      <td class="contact_name">
-        <div class="flex-cell">
-          <img src="/assets/pics/photos/Pola_Leszczyńska@3x.png" alt="" class="contact_userpic">
-          <div class="contact_status contact_status-offline"></div>Pola Leszczyńska
-        </div>
-      </td>
-      <td class="contact_position">
-        <div class="flex-cell">Product Designer</div>
-      </td>
-      <td class="contact_date">
-        <div class="flex-cell">18.01.2018</div>
-      </td>
-    </tr>
-
-    <tr class="contact_list-item">
-      <td class="checkbox__contact_list">
-        <div>
-          <input class="checkbox" type="checkbox" id="contact-5">
-          <label for="contact-5"></label>/</div>
-      </td>
-      <td class="contact_name">
-        <div class="flex-cell">
-          <img src="/assets/pics/photos/Aleksander_Sucheta@3x.png" alt="" class="contact_userpic">
-          <div class="contact_status contact_status-online"></div>Aleksander Sucheta
-        </div>
-      </td>
-      <td class="contact_position">
-        <div class="flex-cell">Product Designer</div>
-      </td>
-      <td class="contact_date">
-        <div class="flex-cell">15.01.2018</div>
-      </td>
-    </tr>
-  </table>
-
-</div>
+      </div>
+      <table class="contact_list">
+        <tr class="contact_list-item">
+          <th class="contact-column-name"></th>
+          <th class="contact-column-name">Name</th>
+          <th class="contact-column-name">Position</th>
+          <th class="contact-column-name">Added to network</th>
+        </tr>
+        <tr class="contact_list-item">
+          <td class="checkbox__contact_list">
+            <input class="checkbox" type="checkbox" id="contact-1">
+            <label for="contact-1"></label>
+          </td>
+          <td class="contact_name">
+            <div class="flex-cell">
+              <img src="/assets/pics/photos/mike-piechota@3x.png" alt="" class="contact_userpic">
+              <div class="contact_status contact_status-online"></div>
+              <span>Mike Piechota</span>
+            </div>
+          </td>
+          <td class="contact_position">
+            <div class="flex-cell">Product Designer</div>
+          </td>
+          <td class="contact_date">
+            <div class="flex-cell">01.02.2018</div>
+          </td>
+        </tr>
+    
+        <tr class="contact_list-item">
+          <td class="checkbox__contact_list">
+            <input class="checkbox" type="checkbox" id="contact-2">
+            <label for="contact-2"></label>
+          </td>
+          <td class="contact_name">
+            <div class="flex-cell">
+              <img src="/assets/pics/photos/Luke_Pachtel@3x.png" alt="" class="contact_userpic">
+              <div class="contact_status contact_status-busy"></div>
+              Luke Pachtel
+            </div>
+          </td>
+          <td class="contact_position">
+            <div class="flex-cell">Sr. UI Designer</div>
+          </td>
+          <td class="contact_date">
+            <div class="flex-cell">01.02.2018</div>
+          </td>
+        </tr>
+    
+        <tr class="contact_list-item">
+          <td class="checkbox__contact_list">
+            <input class="checkbox" type="checkbox" id="contact-3">
+            <label for="contact-3"></label>
+          </td>
+          <td class="contact_name">
+            <div class="flex-cell">
+              <img src="/assets/pics/photos/Dawid_Wozniak@3x.png" alt="" class="contact_userpic">
+              <div class="contact_status contact_status-busy"></div>
+              Dawid Wozniak
+            </div>
+          </td>
+          <td class="contact_position">
+            <div class="flex-cell">Sr. Product Designer & PD Team Leader</div>
+    
+          </td>
+          <td class="contact_date">
+            <div class="flex-cell">18.01.2018</div>
+          </td>
+        </tr>
+    
+        <tr class="contact_list-item">
+          <td class="checkbox__contact_list">
+            <div>
+              <input class="checkbox" type="checkbox" id="contact-4">
+              <label for="contact-4"></label></div>
+          </td>
+          <td class="contact_name">
+            <div class="flex-cell">
+              <img src="/assets/pics/photos/Pola_Leszczyńska@3x.png" alt="" class="contact_userpic">
+              <div class="contact_status contact_status-offline"></div>Pola Leszczyńska
+            </div>
+          </td>
+          <td class="contact_position">
+            <div class="flex-cell">Product Designer</div>
+          </td>
+          <td class="contact_date">
+            <div class="flex-cell">18.01.2018</div>
+          </td>
+        </tr>
+        <tr class="contact_list-item">
+          <td class="checkbox__contact_list">
+            <div>
+              <input class="checkbox" type="checkbox" id="contact-5">
+              <label for="contact-5"></label></div>
+          </td>
+          <td class="contact_name">
+            <div class="flex-cell">
+              <img src="/assets/pics/photos/Aleksander_Sucheta@3x.png" alt="" class="contact_userpic">
+              <div class="contact_status contact_status-online"></div>Aleksander Sucheta
+            </div>
+          </td>
+          <td class="contact_position">
+            <div class="flex-cell">Product Designer</div>
+          </td>
+          <td class="contact_date">
+            <div class="flex-cell">15.01.2018</div>
+          </td>
+        </tr>
+      </table>
+    </div>
